@@ -6,6 +6,7 @@ import App from './App'
 import Users from './users'
 import Contact from './contact'
 import single_blog from './pages/single-blog'
+import about from './pages/about'
 import '../node_modules/font-awesome/css/font-awesome.min.css'; 
 
 const routing = (
@@ -24,10 +25,14 @@ const routing = (
         <li>
           <Link to="/single-blog">Single Blog</Link>
         </li>
+        <li>
+          <Link to="/about">about</Link>
+        </li>
       </ul> */}
       <Route exact path="/" component={App} />
       <Route path="/users" component={Users} />
       <Route path="/contact" component={Contact} />
+      <Route path="/about" component={about} />
       <Route path="/single-blog" component={single_blog} />
     </div>
   </Router>

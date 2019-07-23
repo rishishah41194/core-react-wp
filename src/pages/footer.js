@@ -19,7 +19,7 @@ class Footer extends Component {
             </header>
 
             <footer id="footer">
-              <p className="copyright">© Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+              <p className="copyright">© Untitled. All rights reserved. Rishi Shah.</p>
             </footer>
             </section>
         </div>
