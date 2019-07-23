@@ -13,7 +13,7 @@ class Index extends Component {
   }
 
   componentDidMount() {
-    return fetch(`https://wptest.io/wp-json/wp/v2/pages`)
+    return fetch(`https://public-api.wordpress.com/wp/v2/sites/gatsbyjsexamplewordpress.wordpress.com/posts/`)
     .then((response) => response.json())
     .then((responseJson) => {
       this.setState({
