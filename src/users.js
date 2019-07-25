@@ -24,15 +24,17 @@ class Users extends React.Component {
   render() {
     return (
       <div>
+        <h1>cvdvdv</h1>
           {this.state.data.map((item, index) => (
             <div>
               <div class="row">
                 <div class="leftcolumn">
                   <div class="card">
                     <div className= "title">
-                      <h1>{item.title.rendered}</h1>
+                      
+                      {/* <h1>{item.title.rendered}</h1> */}
                     </div>
-                    <div className= "content" dangerouslySetInnerHTML={{ __html: item.content.rendered }} />
+                    {/* <div className= "content" dangerouslySetInnerHTML={{ __html: item.content.rendered }} /> */}
                   </div>
                 </div>
               </div>

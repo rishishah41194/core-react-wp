@@ -1,40 +1,14 @@
-import React from 'react'
+import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import App from './App'
-import Users from './users'
-import Contact from './contact'
-import single_blog from './pages/single-blog'
-import about from './pages/about'
-import '../node_modules/font-awesome/css/font-awesome.min.css'; 
+import { BrowserRouter } from 'react-router-dom'
 
-const routing = (
-  <Router>
-    <div>
-      {/* <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/users">Users</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-        <li>
-          <Link to="/single-blog">Single Blog</Link>
-        </li>
-        <li>
-          <Link to="/about">about</Link>
-        </li>
-      </ul> */}
-      <Route exact path="/" component={App} />
-      <Route path="/users" component={Users} />
-      <Route path="/contact" component={Contact} />
-      <Route path="/about" component={about} />
-      <Route path="/single-blog" component={single_blog} />
-    </div>
-  </Router>
-)
-ReactDOM.render(routing, document.getElementById('root'))
+
+import '../node_modules/font-awesome/css/font-awesome.min.css';
+
+ReactDOM.render((
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+), document.getElementById('root'))
